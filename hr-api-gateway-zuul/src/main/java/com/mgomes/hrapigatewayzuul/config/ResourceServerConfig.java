@@ -17,7 +17,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter  {
 	
 	private static final String[] OPERATOR = { "/hr-worker/**" };
 	
-	private static final String[] ADMIN = { "/hr-payroll/**" };
+	private static final String[] ADMIN = { "/hr-payroll/**", "/hr-user/**", "/hr-worker/actuator/**", "/hr-oauth/actuator/**"  };
 	
 	@Autowired
 	private JwtTokenStore tokenStore;
